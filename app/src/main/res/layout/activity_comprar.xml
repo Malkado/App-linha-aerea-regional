@@ -1,22 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/aircraft"
+        android:scaleType="centerCrop"
+      />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/Azul_trans"
+        />
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá. Onde começará sua próxima jornada?"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="145dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        />
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
 
-
-    <RelativeLayout
+        />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="comprar"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
 
-</android.support.constraint.ConstraintLayout>
+        >
+
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Ida e volta"
+        android:layout_marginTop="172dp"
+        android:id="@+id/btn_ida_volta"
+        android:textAllCaps="true"
+       android:textColor="@color/azul_escuro"
+        android:onClick="frag_ida_volta"
+        android:background="@drawable/btn_fragment_trans_compra"
+        android:stateListAnimator="@null"
+        />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Apenas ida"
+            android:layout_marginTop="172dp"
+            android:id="@+id/btn_ida"
+            android:textAllCaps="true"
+            android:onClick="frag_ida"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_fragment_trans_compra_gray"
+            android:stateListAnimator="@null"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

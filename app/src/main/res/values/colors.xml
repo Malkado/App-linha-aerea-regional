@@ -8,4 +8,8 @@
     <color name="azul_escuro">#00BFFF</color>
     <color name="azul_turquesa">#BBFFFF</color>
     <color name="trans">#00000000 </color>
+    <color name="Azul_trans">#4D00BFFF</color>
+    <color name="Black">#000000</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="DeepSkyBlue2">#00B2EE</color>
 </resources>
