@@ -1,5 +1,6 @@
 package br.com.projeto20.View;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -131,17 +132,9 @@ public class Activity_App extends MainActivity  {
         transaction.commit();
 
     }
-    public void btn2MudaCorGray(View view){
-       btnIda.setBackgroundResource(R.drawable.btn_fragment_trans_compra_gray);
-    }
-    public void btn2MudaCorWhite(View view){
-        btnIda.setBackgroundResource(R.drawable.btn_fragment_trans_compra);
-    }
-    public void btn1MudaCorGray(View view){
-        btnIdaVolta.setBackgroundResource(R.drawable.btn_fragment_trans_compra_gray);
-    }
-    public void btn1MudaCorWhite(View view){
-        btnIdaVolta.setBackgroundResource(R.drawable.btn_fragment_trans_compra);
+    public void telaListagemVoo(View v){
+        Intent intent= new Intent(this,ListaVooActivity.class);
+        startActivity( intent );
     }
 }
 

@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.Activity_App"></activity>
+        <activity android:name=".View.ListaVooActivity"></activity>
     </application>
 
 </manifest>

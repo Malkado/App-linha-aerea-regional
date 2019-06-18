@@ -125,7 +125,8 @@
         android:text="Pesquisar voo"
         android:textColor="@color/white"
         android:outlineSpotShadowColor="@color/Black"
-        android:background="@drawable/btn_background"/>
+        android:background="@drawable/btn_background"
+        android:onClick="telaListagemVoo"/>
 
     </LinearLayout>
 </LinearLayout>
